@@ -1,0 +1,268 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SÍgsig En Vivo - Transmisiones</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="container">
+            <a href="#hero" class="nav-logo">
+                <img src="logo.png" alt="Sigsig En Vivo" id="logo-img">
+            </a>
+            <button id="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="nav-menu">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#live-stream-section">Transmisión</a></li>
+                <li><a href="#about-section">Nosotros</a></li>
+                <li><a href="#services-section">Servicios</a></li>
+                <li><a href="#faq-section">Preguntas Frecuentes</a></li>
+                <li><a href="#testimonials-section">Opiniones</a></li>
+                <li><a href="#gallery-section">Galería</a></li>
+                <li><a href="#contact-section">Contacto</a></li>
+                <li>
+                    <a href="https://www.facebook.com/sigsigenvivo" target="_blank" rel="noopener noreferrer"
+                        class="nav-button facebook-nav-button" style="display: flex; align-items: center;">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="hero">
+        <video autoplay muted loop playsinline class="hero-video-bg">
+            <source src="video-principal.mp4" type="video/mp4">
+            Tu navegador no soporta video en fondo.
+        </video>
+        <div class="hero-content">
+            <h1>Sígsig En Vivo</h1>
+            <p>Transmitimos tus momentos más importantes.</p>
+            <a href="#live-stream-section" class="btn btn-primary">Ver Transmisión Ahora</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="live-stream-section" class="content-section">
+            <div class="container">
+                <h2>Transmisión en Vivo</h2>
+                <div id="video-container" class="hidden">
+                    <!-- 
+                        INSTRUCCIÓN PARA EL ADMINISTRADOR:
+                        Cuando estés transmitiendo en vivo en Facebook:
+                        1. Ve a tu video en vivo en Facebook.
+                        2. Haz clic en los tres puntos (...) que aparecen en la publicación del video.
+                        3. Selecciona la opción "Insertar" (o "Embed").
+                        4. Copia el código <iframe> completo que te proporciona Facebook.
+                        5. Pega ese código <iframe> AQUÍ, reemplazando este comentario.
+
+                        Ejemplo de código de inserción de Facebook:
+                        <iframe src="https://www.facebook.com/plugins/video.php?href=URL_DEL_VIDEO_EN_VIVO&show_text=false&width=560" 
+                                width="560" height="315" style="border:none;overflow:hidden" 
+                                scrolling="no" frameborder="0" allowfullscreen="true" 
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                                allowFullScreen="true"></iframe>
+                    -->
+                </div>
+                <p id="offlineMessage" class="hidden">
+
+                </p>
+            </div>
+        </section>
+
+        <section id="about-section" class="content-section alt-bg">
+            <div class="container">
+                <h2>Quiénes Somos</h2>
+                <p>
+                    Somos un equipo con más de 10 años de experiencia en producción audiovisual y tecnología de
+                    streaming en vivo.
+                </p>
+                <p>
+                    Sigue nuestra página en Facebook para estar al tanto de todas nuestras transmisiones en vivo,
+                    eventos y contenido exclusivo.
+                </p>
+                <a href="https://www.facebook.com/sigsigenvivo" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-secondary facebook-page-button">
+                    <i class="fab fa-facebook-f" style="" ></i> Visitar Sigsig En Vivo en Facebook
+                </a>
+            </div>
+        </section>
+
+        <section id="services-section" class="content-section">
+            <div class="container">
+                <h2>Nuestros Servicios</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <i class="fas fa-video fa-2x service-icon"></i>
+                        <h3>Transmisión en Vivo para Eventos</h3>
+                        <p>Cobertura profesional de tus eventos más importantes, llevándolos a una audiencia global.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-film fa-2x service-icon"></i>
+                        <h3>Producción Audiovisual Profesional</h3>
+                        <p>Calidad de video y audio superior para asegurar una experiencia visual impactante.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-hand-holding-usd fa-2x service-icon"></i>
+                        <h3>Monetización y Donaciones</h3>
+                        <p>Integramos opciones de publicidad y donaciones para tus transmisiones.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-headset fa-2x service-icon"></i>
+                        <h3>Soporte Técnico 24/7</h3>
+                        <p>Asistencia continua para garantizar que tu transmisión sea un éxito sin interrupciones.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-helicopter fa-2x service-icon"></i>
+                        <h3>Captura Aérea con Drones</h3>
+                        <p>Videos espectaculares desde el aire para bodas, conciertos y eventos deportivos.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-globe fa-2x service-icon"></i>
+                        <h3>Streaming Multiplataforma</h3>
+                        <p>Transmitimos en YouTube, Facebook, Twitch y más, de forma simultánea y sin interrupciones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq-section" class="content-section">
+            <div class="container">
+                <h2>Preguntas Frecuentes</h2>
+                <div class="faq-container">
+                    <div class="faq">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿Qué tipo de eventos transmiten?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Transmitimos bodas, conciertos, conferencias, funerales y eventos corporativos.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿Puedo ver la transmisión desde mi celular?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, nuestras transmisiones están optimizadas para celulares, tablets y computadoras.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿La transmisión se puede grabar?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, ofrecemos la opción de grabación en HD del evento completo.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿La transmisión es privada o pública?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Tú decides: puede ser abierta al público o con acceso restringido mediante contraseña o
+                                enlace privado.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿Puedo monetizar mi evento?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, puedes añadir publicidad, recibir donaciones o vender entradas virtuales.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿Qué necesito para contratar el servicio?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Solo necesitas contactarnos y brindarnos detalles del evento. Nosotros nos encargamos del
+                                resto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials-section" class="content-section alt-bg">
+            <div class="container">
+                <h2>Opiniones</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-item">
+                        <blockquote>"Excelente servicio, calidad profesional."</blockquote>
+                        <cite>– Carlos P.</cite>
+                    </div>
+                    <div class="testimonial-item">
+                        <blockquote>"Mis eventos se ven increíbles gracias a ellos."</blockquote>
+                        <cite>– Sofía G.</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery-section" class="content-section">
+            <div class="container">
+                <h2>Galería</h2>
+                <p class="placeholder-text">Próximamente: Una galería de nuestros mejores momentos. ¡Mantente conectado!
+                </p>
+                <!-- Placeholder for gallery items -->
+            </div>
+        </section>
+
+        <section id="contact-section" class="content-section alt-bg">
+            <div class="container">
+                <h2>Contacto</h2>
+                <div class="contact-details">
+                    <p><i class="fas fa-phone"></i> Teléfono / WhatsApp: <a href="tel:+593985070421">+593 98 507
+                            0421</a></p>
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@sigsi.com">info@sigsi.com</a></p>
+                    <p class="contact-facebook-link">
+                        También puedes contactarnos a través de nuestra página de <a
+                            href="https://www.facebook.com/sigsigenvivo" target="_blank"
+                            rel="noopener noreferrer">Facebook Sigsig En Vivo</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="currentYear"></span> SISGIG EN VIVO. Todos los derechos reservados.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/sigsigenvivo" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <!-- Add other social links here if available -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
