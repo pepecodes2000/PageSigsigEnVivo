@@ -79,3 +79,26 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+let lastScrollTop = 0;
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+
+    // Aplicar clase "scrolled"
+    if (scrollTop > 10) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+
+    // Ocultar al bajar, mostrar al subir
+    if (scrollTop > lastScrollTop && scrollTop > 100) {
+        navbar.style.top = "-100px"; // Oculta
+    } else {
+        navbar.style.top = "0px"; // Muestra
+    }
+
+    lastScrollTop = scrollTop;
+});
